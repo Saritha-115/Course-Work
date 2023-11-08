@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <style>
+      section {
+        padding: 60px 0;
+      }
+
+      /* Your existing styles... */
+      #back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none; /* Initially hidden */
+        z-index: 999;
+      }
+    </style>
+  </head>
+  <body class="bf-light">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md bg-dark pt-5 pb-5 navbar-fixed-top">
+      <div class="container-xxl">
+        <!-- navbar brand / title -->
+        <a class="navbar-brand" href="about.html">
+          <span class="text-light fw-bold">
+            <i class="bi bi-book-half"></i>
+            Themiya Store
+          </span>
+        </a>
+        <!-- toggle button for mobile nav -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navbar links -->
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="about.html"
+                >About The Store</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="contact.php">Get in Touch</a>
+            </li>
+            <li class="nav-item ms-2 d-none d-md-inline">
+              <a class="nav-link text-light" href="addProduct.php">Add Book</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main image & intro text -->
+    <section id="intro">
+      <div class="container-lg">
+        <div class="row g-4 justify-content-center align-items-center">
+          <div class="col-md-5 text-center text-md-start">
+            <h1>
+              <div class="display-2">Ink of Imagination</div>
+              <div class="display-5 text-muted">
+                Unraveling the Story Within
+              </div>
+            </h1>
+            <p class="lead my-4 text-muted">
+              Books: Where dreams and reality meet and discover a new world
+              between the pages.
+            </p>
+          </div>
+          <div class="col-md-5 text-center d-none d-md-block">
+            <!-- tooltip -->
+            <span
+              class="tt"
+              data-bs-placement="bottom"
+              title="Themiya Store cover photo"
+            >
+              <img
+                src="./assets/pexels-cottonbro-studio-5095897.jpg"
+                class="img-fluid"
+                alt="ebook"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- topics at a glance -->
+    <section id="topics" style="background-color: rgb(240, 239, 239)">
+      <div class="container-md">
+        <div class="text-center">
+          <h2>About...</h2>
+          <p class="lead">A quick glance at our store</p>
+        </div>
+        <div class="row my-5 g-5 justify-content-around align-items-center">
+          <div class="col-6 col-lg-4">
+            <img
+              src="./assets/pexels-oziel-gómez-2846814.jpg"
+              class="img-fluid"
+              alt="ebook"
+            />
+          </div>
+          <div class="col-lg-6">
+            <!-- accordion -->
+            <div class="accordion" id="chapters">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-1">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-1"
+                    aria-expanded="true"
+                    aria-controls="chapter-1"
+                  >
+                    About Themiya Store
+                  </button>
+                </h2>
+                <div
+                  id="chapter-1"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="heading-1"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Celebrate the World of Books at Themiya Store! Our passion
+                      for literature is at the heart of everything we do. Step
+                      into a welcoming and inspiring space where every book is a
+                      gateway to adventure, knowledge, and wonder. With a
+                      curated collection spanning across genres, we're dedicated
+                      to helping you find the perfect read. Our friendly,
+                      knowledgeable staff is always ready to guide you to hidden
+                      gems or the latest bestsellers. Whether you prefer the
+                      tactile experience of a physical book or the convenience
+                      of e-readers, we have something for everyone.
+                    </p>
+                    <p>
+                      At Themiya Store, it's not just about selling books; it's
+                      about fostering a community of readers. Join us for author
+                      events, book clubs, and lively discussions, and become a
+                      part of our literary family. Explore, connect, and
+                      celebrate the magic of storytelling with us
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-2">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-2"
+                    aria-expanded="false"
+                    aria-controls="chapter-2"
+                  >
+                    Our Story
+                  </button>
+                </h2>
+                <div
+                  id="chapter-2"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-2"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Themiya Store opened its doors in 2003 with a simple yet
+                      profound mission: to connect people with the books that
+                      ignite their imagination, inspire their curiosity, and
+                      provide a window into new worlds. We started as a small,
+                      independent bookstore with a passionate team of
+                      bibliophiles who shared a common love for the written
+                      word.
+                    </p>
+                    <p>
+                      Over the years, we've grown into a beloved community of
+                      readers, writers, and book enthusiasts. Our journey has
+                      been one of constant discovery, as we've expanded our
+                      offerings to encompass a wide variety of genres, authors,
+                      and formats.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-3">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-3"
+                    aria-expanded="false"
+                    aria-controls="chapter-1"
+                  >
+                    Our Collection
+                  </button>
+                </h2>
+                <div
+                  id="chapter-3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-3"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Dive into Our Rich Collection of Literary Treasures! At
+                      Themiya Store, we take immense pride in our diverse and
+                      extensive collection. Our shelves are a tapestry of
+                      genres, from timeless classics to contemporary gems,
+                      catering to all tastes and preferences. You'll find
+                      captivating fiction, gripping mysteries, inspiring
+                      biographies, thought-provoking non-fiction, and a wide
+                      range of titles for young readers. We curate our selection
+                      with care, ensuring that each book tells a unique story
+                      and offers a new perspective. Our collection is not just a
+                      reflection of the literary world;
+                    </p>
+                    <p>
+                      it's an invitation to explore different cultures, voices,
+                      and ideas. No matter your interests, you're bound to find
+                      a book that resonates with you at Themiya Store. Browse
+                      through our aisles or explore our digital catalog, and let
+                      the magic of literature transport you to new realms of
+                      imagination and knowledge. word.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-4">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-4"
+                    aria-expanded="false"
+                    aria-controls="chapter-4"
+                  >
+                    Our Commitment
+                  </button>
+                </h2>
+                <div
+                  id="chapter-4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-4"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      At Themiya Store, Our Commitment Goes Beyond Books. We're
+                      more than just a place to buy books; we're a beacon of
+                      literacy and community engagement. Our commitment to the
+                      written word extends to fostering a love of reading in all
+                      its forms. We actively support local authors, offering a
+                      platform for their work to shine. We host book clubs and
+                      reading events that bring people together to discuss and
+                      celebrate the power of storytelling.
+                    </p>
+                    <p>
+                      Furthermore, we're dedicated to promoting literacy and
+                      education. We believe that books are tools for personal
+                      growth and lifelong learning, so we frequently engage in
+                      outreach programs, partnering with local schools and
+                      libraries to provide books and resources to those in need.
+                    </p>
+                    <p>
+                      Our store also embodies sustainability and ethical
+                      practices. We're committed to minimizing our environmental
+                      footprint, from eco-friendly packaging to sourcing
+                      responsibly printed materials.
+                    </p>
+                    <p>
+                      In every facet of our operation, from community
+                      involvement to sustainable business practices, we're
+                      dedicated to making a positive impact. At Themiya Store,
+                      our commitment isn't just a statement; it's a way of life
+                      that ensures our role as not only a bookseller but a
+                      catalyst for positive change in our community and beyond.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-5">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-5"
+                    aria-expanded="false"
+                    aria-controls="chapter-5"
+                  >
+                    Our Team
+                  </button>
+                </h2>
+                <div
+                  id="chapter-5"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-5"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      At Themiya Store, our team is the heart and soul of our
+                      book-loving community. Comprising dedicated and passionate
+                      individuals, we share a common love for literature and a
+                      commitment to creating a welcoming and enriching
+                      experience for our customers.
+                    </p>
+                    <p>
+                      Our knowledgeable booksellers are the guiding stars of our
+                      store. They're more than just salespeople; they are
+                      literary enthusiasts who are here to help you find the
+                      perfect book to suit your taste. Whether you're seeking a
+                      thrilling mystery, a heartwarming romance, or a
+                      mind-expanding non-fiction read, our team is always ready
+                      with insightful recommendations.
+                    </p>
+                    <p>
+                      Our support staff works behind the scenes to ensure a
+                      seamless shopping experience, both in-store and online.
+                      From organizing events to managing inventory, they keep
+                      the gears of our literary world turning smoothly.
+                    </p>
+                    <p>
+                      We're not just a team; we're a family of book lovers. We
+                      share book recommendations, discuss our favorite authors,
+                      and continuously educate ourselves about the ever-evolving
+                      world of literature.
+                    </p>
+                    <p>
+                      Every member of our team is dedicated to making your visit
+                      to Themiya Store a memorable one. We're here to help you
+                      explore the endless realms of the written word, engage in
+                      thought-provoking conversations, and inspire your love for
+                      books. Come meet us in person at our store or interact
+                      with us online; we can't wait to be your literary
+                      companions on your reading journey.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- reviews list -->
+    <section id="reviews" class="bg-light">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2><i class="bi bi-stars text-success"></i>Book Reviews</h2>
+          <p class="lead">What my customers have said about the store...</p>
+        </div>
+
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-8">
+            <div class="list-group">
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-fill text-success"></i>
+                </div>
+                <h5 class="mb-1">A Literary Gem!</h5>
+                <p class="mb-1">
+                  I stumbled upon this book store by chance, and it was
+                  serendipity! The collection is outstanding, and the staff's
+                  recommendations are pure gold. I've discovered some incredible
+                  reads here that have enriched my life. Thank you, Themiya
+                  Store, for being a sanctuary for book lovers like me!
+                </p>
+                <small>Review by Sarah R</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-fill text-success"></i>
+                </div>
+                <h5 class="mb-1">A Bookworm's Paradise</h5>
+                <p class="mb-1">
+                  As an avid reader, I've visited bookstores all over, but
+                  Themiya Store stands out. The ambiance is inviting, the
+                  selection is diverse, and the staff is incredibly
+                  knowledgeable. I found a rare, out-of-print edition I'd been
+                  searching for ages, and I can't thank them enough. It's a
+                  reader's paradise!
+                </p>
+                <small>Review by John D.</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-half text-success"></i>
+                </div>
+                <h5 class="mb-1">Outstanding Customer Service</h5>
+                <p class="mb-1">
+                  I've had the pleasure of shopping both in-store and online
+                  with Themiya Store, and the experience has been exceptional on
+                  both fronts. The website is user-friendly, and the delivery is
+                  prompt. The in-store experience is warm and personalized, and
+                  the recommendations are spot on. I'm always excited to come
+                  back for more!
+                </p>
+                <small>Review by Emily W.</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-fill text-success"></i>
+                </div>
+                <h5 class="mb-1">Hidden Treasures Galore</h5>
+                <p class="mb-1">
+                  The moment I stepped into Themiya Store, I felt like I'd
+                  entered a treasure trove. The staff's knowledge of literature
+                  is impressive, and they helped me discover some hidden gems
+                  that aren't on everyone's radar. I'm now exploring genres I
+                  never thought I'd enjoy. This is a haven for curious minds!
+                </p>
+                <small>Review by David S.</small>
+              </div>
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-fill text-success"></i>
+                  <i class="bi bi-star-half text-success"></i>
+                </div>
+                <h5 class="mb-1">Community of Book Lovers</h5>
+                <p class="mb-1">
+                  What I adore about Themiya Store is the sense of community it
+                  fosters. The book clubs, author events, and the passionate
+                  discussions with fellow readers have enriched my reading
+                  experience. I've made friends here, both in the store and
+                  online. This place isn't just a store; it's a community of
+                  book lovers.
+                </p>
+                <small>Review by Susan M.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container me-5" style="padding: 20px 0">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Contact Us</h4>
+            <p>
+              Feel free to get in touch with us for any questions or inquiries:
+            </p>
+            <ul class="list-unstyled">
+              <li>
+                <i class="bi bi-envelope-fill"></i> Email:
+                contact@themiyastore.com
+              </li>
+              <li><i class="bi bi-telephone-fill"></i> Phone: 0112 633 824</li>
+              <li><i class="bi bi-whatsapp"></i> WhatsApp: +94 77 163 3824</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h4>Follow Us</h4>
+            <p>
+              Stay connected with us on <br />
+              social media:
+            </p>
+            <ul class="list-unstyled">
+              <li>
+                <i class="bi bi-facebook"></i>
+                <a
+                  href="https://web.facebook.com/login/?_rdc=1&_rdr"
+                  class="text-light"
+                  target="_blank"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <i class="bi bi-instagram"></i>
+                <a
+                  href="https://www.instagram.com/accounts/login/"
+                  class="text-light"
+                  target="_blank"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js tooltips popper code -->
+    <script>
+      const tooltips = document.querySelectorAll(".tt");
+      tooltips.forEach((t) => {
+        new bootstrap.Tooltip(t);
+      });
+    </script>
+
+    <!-- btn back to top -->
+    <button id="back-to-top" class="btn btn-secondary">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- back top js code -->
+    <script>
+      var backToTopButton = document.getElementById("back-to-top");
+
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 100) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      });
+
+      backToTopButton.addEventListener("click", function () {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+      });
+    </script>
+  </body>
+</html>
